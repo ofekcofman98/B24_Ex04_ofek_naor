@@ -71,11 +71,12 @@ namespace Ex04.Menus.Interfaces
                     {
                         throw new FormatException();
                     }
-                    if (choice < 1 || choice > i_MenuItem.AmountOfChoices()) 
+                    if (choice < 0 || choice > i_MenuItem.AmountOfChoices()) 
                     {
                         throw new ArgumentOutOfRangeException();
                     }
-                    break;
+
+                    return choice;
                 }
                 catch (FormatException)
                 {
@@ -83,7 +84,7 @@ namespace Ex04.Menus.Interfaces
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    Console.WriteLine("Choice out of range. Please enter a number between 1 and 5.");
+                    Console.WriteLine($"Choice out of range. Please enter a number between 0 and {i_MenuItem.AmountOfChoices()}.");
                 }
                 catch (Exception)
                 {

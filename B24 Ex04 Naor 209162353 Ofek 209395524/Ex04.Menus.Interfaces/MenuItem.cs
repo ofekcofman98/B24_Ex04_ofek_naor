@@ -11,6 +11,7 @@ namespace Ex04.Menus.Interfaces
         private string m_MenuTitle;
         private MenuItem m_ParentMenuItem;
         private List<MenuItem> m_MenuItemsList = new List<MenuItem>();
+        private List<IMenuItemListener> m_MenuItemListeners = new List<IMenuItemListener>();
 
         public MenuItem ParentMenuItem
         {
@@ -35,7 +36,13 @@ namespace Ex04.Menus.Interfaces
 
         public void PrintMenu()
         {
-           
+            Console.Clear();
+            Console.WriteLine(m_MenuTitle);
+            Console.WriteLine("0. " + (m_ParentMenuItem == null ? "Exit" : "Back"));
+            for (int i = 0; i < m_MenuItemsList.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {m_MenuItemsList[i].m_MenuTitle}");
+            }
         }
 
         public MenuItem GetSubMenuItem(int i_UserChoice)
@@ -53,9 +60,24 @@ namespace Ex04.Menus.Interfaces
             return m_MenuItemsList.Count;
         }
 
+        public void RegisterListener(IMenuItemListener i_Listener)
+        {
+            m_MenuItemListeners.Add(i_Listener);
+        }
+
+        private void notifyAllListeners()
+        {
+            foreach (IMenuItemListener listener in m_MenuItemListeners)
+            {
+                listener.Invoke();
+            }
+        }
         public void Chosen()
         {
-
+            Console.Clear();
+            notifyAllListeners();
+            Console.WriteLine("Press Enter to Continue:");
+            Console.ReadLine();
         }
     }
 }

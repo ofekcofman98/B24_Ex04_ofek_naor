@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Ex04.Menus.Interfaces;
 
 namespace Ex04.Menus.Test
@@ -11,15 +7,20 @@ namespace Ex04.Menus.Test
     {
         public static Interfaces.MainMenu CreateInterfaceMainMenu()
         {
-            Interfaces.MainMenu mainMenu = new MainMenu("Interface Main Menu");
-            MenuItem versionAndCapitalsMenuItem = mainMenu.AddSubMenuItem("Version and Capitals");
-            MenuItem dateAndTimeMenuItem = mainMenu.AddSubMenuItem("Show Date/Time");
+            Interfaces.MainMenu mainMenu = new Interfaces.MainMenu("Interface Main Menu");
+            Interfaces.MenuItem versionAndCapitalsMenuItem = mainMenu.AddSubMenuItem("Version and Capitals");
+            Interfaces.MenuItem dateAndTimeMenuItem = mainMenu.AddSubMenuItem("Show Date/Time");
 
-            versionAndCapitalsMenuItem.AddSubMenuItem("Show Version");
-            versionAndCapitalsMenuItem.AddSubMenuItem("Show Capitals");
+            Interfaces.MenuItem showVersion = versionAndCapitalsMenuItem.AddSubMenuItem("Show Version");
+            Interfaces.MenuItem showCapitals = versionAndCapitalsMenuItem.AddSubMenuItem("Show Capitals");
 
-            dateAndTimeMenuItem.AddSubMenuItem("Show Date");
-            dateAndTimeMenuItem.AddSubMenuItem("Show Time");
+            Interfaces.MenuItem showDate = dateAndTimeMenuItem.AddSubMenuItem("Show Date");
+            Interfaces.MenuItem showTime = dateAndTimeMenuItem.AddSubMenuItem("Show Time");
+
+            showVersion.RegisterListener(new ShowVersion());
+            showCapitals.RegisterListener(new CountCapitals());
+            showDate.RegisterListener(new ShowDate());
+            showTime.RegisterListener(new ShowTime());
 
             return mainMenu;
         }

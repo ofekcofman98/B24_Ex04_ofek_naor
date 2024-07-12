@@ -1,0 +1,15 @@
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Test.exe.config
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Test.exe
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Test.pdb
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Events.dll
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Interfaces.dll
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Events.pdb
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Events.dll.config
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Interfaces.pdb
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\bin\Debug\Ex04.Menus.Interfaces.dll.config
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.csproj.CopyComplete
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.exe
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.pdb
