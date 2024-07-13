@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex04.Menus.Interfaces
 {
     public class MainMenu
     {
-        // check hi it ofek
         private MenuItem m_MainMenuItem;
         private MenuItem m_CurrentMenuItem;
 
@@ -40,7 +35,6 @@ namespace Ex04.Menus.Interfaces
                     if(isMainMenu)
                     {
                         isQuit = true;
-                        continue;
                     }
                     else
                     {
@@ -51,7 +45,7 @@ namespace Ex04.Menus.Interfaces
                 {
                     m_CurrentMenuItem = m_CurrentMenuItem.GetSubMenuItem(userChoice);
 
-                    if(m_CurrentMenuItem.IsLeaf()) // change "Leaf"
+                    if(m_CurrentMenuItem.IsLeaf()) 
                     {
                         m_CurrentMenuItem.Chosen();
                         m_CurrentMenuItem = m_CurrentMenuItem.ParentMenuItem;
@@ -78,6 +72,7 @@ namespace Ex04.Menus.Interfaces
                     }
 
                     return choice;
+
                 }
                 catch (FormatException)
                 {

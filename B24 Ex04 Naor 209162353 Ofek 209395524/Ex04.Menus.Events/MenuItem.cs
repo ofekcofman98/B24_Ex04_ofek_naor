@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex04.Menus.Events
 {
     public class MenuItem
     {
-        private string m_MenuTitle;
+        private readonly string r_MenuTitle;
         private MenuItem m_ParentMenuItem;
         private List<MenuItem> m_SubMenuItemsList = new List<MenuItem>();
         public event Action Chosen;
@@ -23,7 +20,7 @@ namespace Ex04.Menus.Events
 
         public MenuItem(string i_MenuItemTitle, MenuItem i_ParentMenuItem)
         {
-            m_MenuTitle = i_MenuItemTitle;
+            r_MenuTitle = i_MenuItemTitle;
             m_ParentMenuItem = i_ParentMenuItem;
         }
 
@@ -36,13 +33,27 @@ namespace Ex04.Menus.Events
 
         public void PrintMenu()
         {
-            Console.Clear();
-            Console.WriteLine(m_MenuTitle);
-            Console.WriteLine("0. " + (m_ParentMenuItem == null ? "Exit" : "Back"));
+            Console.WriteLine($"**{r_MenuTitle}**");
+            Console.WriteLine("------------------------------");
             for (int i = 0; i < m_SubMenuItemsList.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {m_SubMenuItemsList[i].m_MenuTitle}");
+                Console.WriteLine($"{i + 1} -> {m_SubMenuItemsList[i].r_MenuTitle}");
             }
+
+            Console.WriteLine("0 -> " + (m_ParentMenuItem == null ? "Exit" : "Back"));
+            Console.WriteLine("------------------------------");
+            Console.Write("Enter your request: (");
+
+            for (int i = 1; i <= m_SubMenuItemsList.Count; i++)
+            {
+                Console.Write($"{i}");
+                if (i < m_SubMenuItemsList.Count)
+                {
+                    Console.Write(", ");
+                }
+            }
+
+            Console.WriteLine($" or press '0' to {(m_ParentMenuItem == null ? "Exit" : "Back")}).");
         }
 
         public MenuItem GetSubMenuItem(int i_UserChoice)
@@ -70,10 +81,8 @@ namespace Ex04.Menus.Events
 
         public void MenuItemWasChosen()
         {
-            Console.Clear();
             OnItemWasChosen();
-            Console.WriteLine("Press Enter to continue.");
-            Console.ReadLine();
+            Console.WriteLine();
         }
     }
 }

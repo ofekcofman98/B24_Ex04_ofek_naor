@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex04.Menus.Interfaces
 {
     public class MenuItem
     {
-        private string m_MenuTitle;
+        private readonly string r_MenuTitle;
         private MenuItem m_ParentMenuItem;
-        private List<MenuItem> m_MenuItemsList = new List<MenuItem>();
+        private List<MenuItem> m_SubMenuItemsList = new List<MenuItem>();
         private List<IMenuItemListener> m_MenuItemListeners = new List<IMenuItemListener>();
 
         public MenuItem ParentMenuItem
@@ -23,34 +20,34 @@ namespace Ex04.Menus.Interfaces
 
         public MenuItem(string i_MenuItemTitle, MenuItem i_ParentMenuItem)
         {
-            m_MenuTitle = i_MenuItemTitle;
+            r_MenuTitle = i_MenuItemTitle;
             m_ParentMenuItem = i_ParentMenuItem;
         }
 
         public MenuItem AddSubMenuItem(string i_MenuItemTitle)
         {
             MenuItem subMenuItem = new MenuItem(i_MenuItemTitle, this);
-            m_MenuItemsList.Add(subMenuItem);
+            m_SubMenuItemsList.Add(subMenuItem);
             return subMenuItem;
         }
 
         public void PrintMenu()
         {
-            Console.WriteLine($"**{m_MenuTitle}**");
+            Console.WriteLine($"**{r_MenuTitle}**");
             Console.WriteLine("------------------------------");
-            for (int i = 0; i < m_MenuItemsList.Count; i++)
+            for (int i = 0; i < m_SubMenuItemsList.Count; i++)
             {
-                Console.WriteLine($"{i + 1} -> {m_MenuItemsList[i].m_MenuTitle}");
+                Console.WriteLine($"{i + 1} -> {m_SubMenuItemsList[i].r_MenuTitle}");
             }
 
             Console.WriteLine("0 -> " + (m_ParentMenuItem == null ? "Exit" : "Back"));
             Console.WriteLine("------------------------------");
             Console.Write("Enter your request: (");
 
-            for (int i = 1; i <= m_MenuItemsList.Count; i++)
+            for (int i = 1; i <= m_SubMenuItemsList.Count; i++)
             {
                 Console.Write($"{i}");
-                if (i < m_MenuItemsList.Count)
+                if (i < m_SubMenuItemsList.Count)
                 {
                     Console.Write(", ");
                 }
@@ -61,17 +58,17 @@ namespace Ex04.Menus.Interfaces
 
         public MenuItem GetSubMenuItem(int i_UserChoice)
         {
-            return m_MenuItemsList[i_UserChoice - 1];
+            return m_SubMenuItemsList[i_UserChoice - 1];
         }
 
         public bool IsLeaf()
         {
-            return m_MenuItemsList.Count == 0;
+            return m_SubMenuItemsList.Count == 0;
         }
 
         public int AmountOfChoices()
         {
-            return m_MenuItemsList.Count;
+            return m_SubMenuItemsList.Count;
         }
 
         public void RegisterListener(IMenuItemListener i_Listener)
@@ -86,6 +83,7 @@ namespace Ex04.Menus.Interfaces
                 listener.Invoke();
             }
         }
+
         public void Chosen()
         {
             notifyAllListeners();

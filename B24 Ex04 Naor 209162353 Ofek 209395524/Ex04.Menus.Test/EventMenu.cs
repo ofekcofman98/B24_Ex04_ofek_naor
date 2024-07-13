@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ex04.Menus.Events;
-
-
-namespace Ex04.Menus.Test
+﻿namespace Ex04.Menus.Test
 {
     public class EventMenu
     {
-        public static Events.MainMenu CreateMainMenu()
+        public static Events.MainMenu CreateEventMainMenu()
         {
             Events.MainMenu mainMenu = new Events.MainMenu("Event Main Menu");
 
@@ -23,9 +15,9 @@ namespace Ex04.Menus.Test
             Events.MenuItem showCapitals = versionAndCapitalsMenuItem.AddSubMenuItem("Count Capitals");
             showCapitals.Chosen += ItemsMethods.CountCapitals;
 
-            Events.MenuItem showDate = dateAndTimeMenuItem.AddSubMenuItem("Show date");
+            Events.MenuItem showDate = dateAndTimeMenuItem.AddSubMenuItem("Show Date");
             showDate.Chosen += ItemsMethods.ShowDate;
-            Events.MenuItem showTime = dateAndTimeMenuItem.AddSubMenuItem("Show time");
+            Events.MenuItem showTime = dateAndTimeMenuItem.AddSubMenuItem("Show Time");
             showTime.Chosen += ItemsMethods.ShowTime;
 
             return mainMenu;

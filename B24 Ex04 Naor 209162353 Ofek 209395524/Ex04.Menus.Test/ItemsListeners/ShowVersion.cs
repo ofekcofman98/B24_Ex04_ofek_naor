@@ -1,7 +1,6 @@
-﻿using System;
-using Ex04.Menus.Interfaces;
+﻿using Ex04.Menus.Interfaces;
 
-namespace Ex04.Menus.Test
+namespace Ex04.Menus.Test.ItemsListeners
 {
     public class ShowVersion : IMenuItemListener
     {

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex04.Menus.Test
 {
@@ -23,17 +19,17 @@ namespace Ex04.Menus.Test
         public static void ShowVersion()
         {
             int[] versionNumbers = { 24, 2, 4, 9504 };
-            string formated = string.Join(".", versionNumbers);
-            Console.WriteLine($"App Version {formated}");
+            string formatted = string.Format("{0}.{1}.{2}.{3}", versionNumbers[0], versionNumbers[1], versionNumbers[2], versionNumbers[3]);
+            Console.WriteLine("App Version " + formatted);
         }
 
         public static void CountCapitals()
         {
             Console.WriteLine("Please enter your sentence:");
-            string input = Console.ReadLine();
+            string userSentence = Console.ReadLine();
 
             int capitalLetterCount = 0;
-            foreach (char c in input)
+            foreach (char c in userSentence)
             {
                 if (char.IsUpper(c))
                 {

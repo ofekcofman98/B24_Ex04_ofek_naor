@@ -1,9 +1,4 @@
-﻿using Ex04.Menus.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace Ex04.Menus.Events
 {
@@ -40,7 +35,6 @@ namespace Ex04.Menus.Events
                     if (isMainMenu)
                     {
                         isQuit = true;
-                        continue;
                     }
                     else
                     {
@@ -51,7 +45,7 @@ namespace Ex04.Menus.Events
                 {
                     m_CurrentMenuItem = m_CurrentMenuItem.GetSubMenuItem(userChoice);
 
-                    if (m_CurrentMenuItem.IsLeaf()) // change "Leaf"
+                    if (m_CurrentMenuItem.IsLeaf()) 
                     {
                         m_CurrentMenuItem.MenuItemWasChosen();
                         m_CurrentMenuItem = m_CurrentMenuItem.ParentMenuItem;
@@ -62,14 +56,13 @@ namespace Ex04.Menus.Events
 
         private int getMenuChoice(MenuItem i_MenuItem)
         {
-            int choice;
             while (true)
             {
                 string userChoice = Console.ReadLine();
 
                 try
                 {
-                    if (!int.TryParse(userChoice, out choice))
+                    if (!int.TryParse(userChoice, out int choice))
                     {
                         throw new FormatException();
                     }
@@ -79,6 +72,7 @@ namespace Ex04.Menus.Events
                     }
 
                     return choice;
+
                 }
                 catch (FormatException)
                 {
@@ -93,8 +87,6 @@ namespace Ex04.Menus.Events
                     Console.WriteLine("An error occurred. Please try again.");
                 }
             }
-
-            return choice;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Ex04.Menus.Interfaces;
+﻿using Ex04.Menus.Test.ItemsListeners;
 
 namespace Ex04.Menus.Test
 {
@@ -12,7 +11,7 @@ namespace Ex04.Menus.Test
             Interfaces.MenuItem dateAndTimeMenuItem = mainMenu.AddSubMenuItem("Show Date/Time");
 
             Interfaces.MenuItem showVersion = versionAndCapitalsMenuItem.AddSubMenuItem("Show Version");
-            Interfaces.MenuItem showCapitals = versionAndCapitalsMenuItem.AddSubMenuItem("Show Capitals");
+            Interfaces.MenuItem showCapitals = versionAndCapitalsMenuItem.AddSubMenuItem("Count Capitals");
 
             Interfaces.MenuItem showDate = dateAndTimeMenuItem.AddSubMenuItem("Show Date");
             Interfaces.MenuItem showTime = dateAndTimeMenuItem.AddSubMenuItem("Show Time");
