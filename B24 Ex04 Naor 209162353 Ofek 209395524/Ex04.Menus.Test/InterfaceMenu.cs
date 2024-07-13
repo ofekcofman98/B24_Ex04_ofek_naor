@@ -1,8 +1,6 @@
-﻿using Ex04.Menus.Test.ItemsListeners;
-
-namespace Ex04.Menus.Test
+﻿namespace Ex04.Menus.Test
 {
-    internal class InterfaceMenu
+    public class InterfaceMenu
     {
         public static Interfaces.MainMenu CreateInterfaceMainMenu()
         {
@@ -16,10 +14,10 @@ namespace Ex04.Menus.Test
             Interfaces.MenuItem showDate = dateAndTimeMenuItem.AddSubMenuItem("Show Date");
             Interfaces.MenuItem showTime = dateAndTimeMenuItem.AddSubMenuItem("Show Time");
 
-            showVersion.RegisterListener(new ShowVersion());
-            showCapitals.RegisterListener(new CountCapitals());
-            showDate.RegisterListener(new ShowDate());
-            showTime.RegisterListener(new ShowTime());
+            showVersion.RegisterListener(new ShowVersionListener());
+            showCapitals.RegisterListener(new CountCapitalsListener());
+            showDate.RegisterListener(new ShowDateListener());
+            showTime.RegisterListener(new ShowTimeListener());
 
             return mainMenu;
         }

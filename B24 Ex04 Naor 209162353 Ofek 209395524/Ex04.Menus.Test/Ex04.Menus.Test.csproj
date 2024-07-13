@@ -37,13 +37,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventMenu.cs" />
-    <Compile Include="ItemsListeners\CountCapitals.cs" />
+    <Compile Include="CountCapitalsListener.cs" />
     <Compile Include="InterfaceMenu.cs" />
     <Compile Include="ItemsMethods.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ItemsListeners\ShowDate.cs" />
-    <Compile Include="ItemsListeners\ShowTime.cs" />
-    <Compile Include="ItemsListeners\ShowVersion.cs" />
+    <Compile Include="ShowDateListener.cs" />
+    <Compile Include="ShowTimeListener.cs" />
+    <Compile Include="ShowVersionListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ex04.Menus.Events\Ex04.Menus.Events.csproj">

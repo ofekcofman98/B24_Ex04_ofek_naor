@@ -1,8 +1,8 @@
 ﻿using Ex04.Menus.Interfaces;
 
-namespace Ex04.Menus.Test.ItemsListeners
+namespace Ex04.Menus.Test
 {
-    public class CountCapitals : IMenuItemListener
+    public class CountCapitalsListener : IMenuItemListener
     {
         public void Invoke()
         {

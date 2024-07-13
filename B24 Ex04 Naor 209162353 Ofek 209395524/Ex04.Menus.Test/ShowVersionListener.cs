@@ -1,8 +1,8 @@
 ﻿using Ex04.Menus.Interfaces;
 
-namespace Ex04.Menus.Test.ItemsListeners
+namespace Ex04.Menus.Test
 {
-    public class ShowVersion : IMenuItemListener
+    public class ShowVersionListener : IMenuItemListener
     {
         public void Invoke()
         {

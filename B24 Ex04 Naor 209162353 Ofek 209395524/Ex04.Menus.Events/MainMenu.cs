@@ -15,11 +15,6 @@ namespace Ex04.Menus.Events
             m_CurrentMenuItem = m_MainMenuItem;
         }
 
-        public MenuItem AddSubMenuItem(string i_SubMenuItemTitle)
-        {
-            return m_MainMenuItem.AddSubMenuItem(i_SubMenuItemTitle);
-        }
-
         public void Show()
         {
             bool isQuit = false;
@@ -52,6 +47,11 @@ namespace Ex04.Menus.Events
                     }
                 }
             }
+        }
+
+        public MenuItem AddSubMenuItem(string i_SubMenuItemTitle)
+        {
+            return m_MainMenuItem.AddSubMenuItem(i_SubMenuItemTitle);
         }
 
         private int getMenuChoice(MenuItem i_MenuItem)

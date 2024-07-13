@@ -28,6 +28,7 @@ namespace Ex04.Menus.Events
         {
             MenuItem subMenuItem = new MenuItem(i_MenuItemTitle, this);
             m_SubMenuItemsList.Add(subMenuItem);
+
             return subMenuItem;
         }
 

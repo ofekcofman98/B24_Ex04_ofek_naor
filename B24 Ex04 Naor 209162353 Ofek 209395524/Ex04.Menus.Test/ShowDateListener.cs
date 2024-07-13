@@ -1,8 +1,8 @@
 ﻿using Ex04.Menus.Interfaces;
 
-namespace Ex04.Menus.Test.ItemsListeners
+namespace Ex04.Menus.Test
 {
-    public class ShowDate : IMenuItemListener
+    public class ShowDateListener : IMenuItemListener
     {
         public void Invoke()
         {
