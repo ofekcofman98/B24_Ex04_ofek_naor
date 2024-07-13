@@ -61,17 +61,17 @@ namespace Ex04.Menus.Interfaces
 
         private int getMenuChoice(MenuItem i_MenuItem)
         {
-            while(true)
+            while (true)
             {
-                string userChoice = Console.ReadLine();
-
                 try
                 {
-                    if(!int.TryParse(userChoice, out int choice))
+                    string userChoice = Console.ReadLine();
+
+                    if (!int.TryParse(userChoice, out int choice))
                     {
                         throw new FormatException();
                     }
-                    if (choice < 0 || choice > i_MenuItem.AmountOfChoices()) 
+                    if (choice < 0 || choice > i_MenuItem.AmountOfChoices())
                     {
                         throw new ArgumentOutOfRangeException();
                     }
@@ -91,7 +91,6 @@ namespace Ex04.Menus.Interfaces
                     Console.WriteLine("An error occurred. Please try again.");
                 }
             }
-
         }
     }
 }

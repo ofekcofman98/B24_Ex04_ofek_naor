@@ -24,7 +24,7 @@ namespace Ex04.Menus.Test
         {
             int[] versionNumbers = { 24, 2, 4, 9504 };
             string formated = string.Join(".", versionNumbers);
-            Console.WriteLine($"Version", formated);
+            Console.WriteLine($"App Version {formated}");
         }
 
         public static void CountCapitals()

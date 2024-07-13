@@ -36,13 +36,27 @@ namespace Ex04.Menus.Interfaces
 
         public void PrintMenu()
         {
-            Console.Clear();
-            Console.WriteLine(m_MenuTitle);
-            Console.WriteLine("0. " + (m_ParentMenuItem == null ? "Exit" : "Back"));
+            Console.WriteLine($"**{m_MenuTitle}**");
+            Console.WriteLine("------------------------------");
             for (int i = 0; i < m_MenuItemsList.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {m_MenuItemsList[i].m_MenuTitle}");
+                Console.WriteLine($"{i + 1} -> {m_MenuItemsList[i].m_MenuTitle}");
             }
+
+            Console.WriteLine("0 -> " + (m_ParentMenuItem == null ? "Exit" : "Back"));
+            Console.WriteLine("------------------------------");
+            Console.Write("Enter your request: (");
+
+            for (int i = 1; i <= m_MenuItemsList.Count; i++)
+            {
+                Console.Write($"{i}");
+                if (i < m_MenuItemsList.Count)
+                {
+                    Console.Write(", ");
+                }
+            }
+
+            Console.WriteLine($" or press '0' to {(m_ParentMenuItem == null ? "Exit" : "Back")}).");
         }
 
         public MenuItem GetSubMenuItem(int i_UserChoice)
@@ -74,10 +88,8 @@ namespace Ex04.Menus.Interfaces
         }
         public void Chosen()
         {
-            Console.Clear();
             notifyAllListeners();
-            Console.WriteLine("Press Enter to Continue:");
-            Console.ReadLine();
+            Console.WriteLine();
         }
     }
 }
