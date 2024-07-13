@@ -62,13 +62,14 @@ namespace Ex04.Menus.Interfaces
 
         private int getMenuChoice(MenuItem i_MenuItem)
         {
-            while(true)
+            int choice;
+            while (true)
             {
                 string userChoice = Console.ReadLine();
 
                 try
                 {
-                    if(!int.TryParse(userChoice, out int choice))
+                    if(!int.TryParse(userChoice, out choice))
                     {
                         throw new FormatException();
                     }
@@ -92,6 +93,7 @@ namespace Ex04.Menus.Interfaces
                 }
             }
 
+            return choice;
         }
     }
 }

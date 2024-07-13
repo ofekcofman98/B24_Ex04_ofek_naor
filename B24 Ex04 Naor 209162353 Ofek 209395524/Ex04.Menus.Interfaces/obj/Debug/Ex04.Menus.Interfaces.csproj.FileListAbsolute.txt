@@ -1,0 +1,7 @@
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.dll.config
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.dll
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.pdb
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.csproj.AssemblyReference.cache
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.dll
+C:\Users\Ofek Cofman\source\repos\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.pdb
