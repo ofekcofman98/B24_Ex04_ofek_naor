@@ -14,8 +14,8 @@ namespace Ex04.Menus.Test
     {
         public static void Main()
         {
-            Interfaces.MainMenu interfacesMainMenu = InterfaceMenu.CreateInterfaceMainMenu();
-            interfacesMainMenu.Show();
+            //Interfaces.MainMenu interfacesMainMenu = InterfaceMenu.CreateInterfaceMainMenu();
+            //interfacesMainMenu.Show();
 
             Events.MainMenu eventsMainMenu = EventMenu.CreateMainMenu();
             eventsMainMenu.Show();

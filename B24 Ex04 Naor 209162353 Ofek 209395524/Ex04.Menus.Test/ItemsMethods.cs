@@ -17,19 +17,19 @@ namespace Ex04.Menus.Test
         public static void ShowTime()
         {
             DateTime time = DateTime.Now;
-            Console.WriteLine("Current Date: " + time.ToString("HH:mm:ss"));
+            Console.WriteLine("Current Time: " + time.ToString("HH:mm:ss"));
         }
 
         public static void ShowVersion()
         {
             int[] versionNumbers = { 24, 2, 4, 9504 };
             string formated = string.Join(".", versionNumbers);
-            Console.WriteLine($"Version", formated);
+            Console.WriteLine($"App Version {formated}");
         }
 
         public static void CountCapitals()
         {
-            Console.WriteLine("Please enter your sentence:");
+            Console.WriteLine("Please enter a sentence:");
             string input = Console.ReadLine();
 
             int capitalLetterCount = 0;
