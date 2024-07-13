@@ -53,7 +53,7 @@ namespace Ex04.Menus.Events
 
                     if (m_CurrentMenuItem.IsLeaf()) // change "Leaf"
                     {
-                        m_CurrentMenuItem.Chosen();
+                        m_CurrentMenuItem.MenuItemWasChosen();
                         m_CurrentMenuItem = m_CurrentMenuItem.ParentMenuItem;
                     }
                 }
@@ -62,13 +62,14 @@ namespace Ex04.Menus.Events
 
         private int getMenuChoice(MenuItem i_MenuItem)
         {
+            int choice;
             while (true)
             {
                 string userChoice = Console.ReadLine();
 
                 try
                 {
-                    if (!int.TryParse(userChoice, out int choice))
+                    if (!int.TryParse(userChoice, out choice))
                     {
                         throw new FormatException();
                     }
@@ -93,6 +94,7 @@ namespace Ex04.Menus.Events
                 }
             }
 
+            return choice;
         }
     }
 }

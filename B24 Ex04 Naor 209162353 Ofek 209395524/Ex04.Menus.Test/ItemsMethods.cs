@@ -17,7 +17,7 @@ namespace Ex04.Menus.Test
         public static void ShowTime()
         {
             DateTime time = DateTime.Now;
-            Console.WriteLine("Current Date: " + time.ToString("HH:mm:ss"));
+            Console.WriteLine("Current Time: " + time.ToString("HH:mm:ss"));
         }
 
         public static void ShowVersion()

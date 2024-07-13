@@ -8,6 +8,7 @@ namespace Ex04.Menus.Interfaces
 {
     public class MainMenu
     {
+        // check hi it ofek
         private MenuItem m_MainMenuItem;
         private MenuItem m_CurrentMenuItem;
 
