@@ -4,7 +4,7 @@ namespace Ex04.Menus.Test
 {
     public class CountCapitalsListener : IMenuItemListener
     {
-        public void Invoke()
+        void IMenuItemListener.Invoke()
         {
             ItemsMethods.CountCapitals();
         }

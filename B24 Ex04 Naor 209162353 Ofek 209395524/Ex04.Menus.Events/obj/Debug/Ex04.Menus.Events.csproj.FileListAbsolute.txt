@@ -1,7 +1,7 @@
-C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\obj\Debug\Ex04.Menus.Events.csproj.AssemblyReference.cache
-C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\obj\Debug\Ex04.Menus.Events.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\bin\Debug\Ex04.Menus.Events.dll.config
 C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\bin\Debug\Ex04.Menus.Events.dll
 C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\bin\Debug\Ex04.Menus.Events.pdb
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\obj\Debug\Ex04.Menus.Events.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\obj\Debug\Ex04.Menus.Events.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\obj\Debug\Ex04.Menus.Events.dll
 C:\Users\user\Source\Repos\ofekcofman98\B24_Ex04_ofek_naor\B24 Ex04 Naor 209162353 Ofek 209395524\Ex04.Menus.Events\obj\Debug\Ex04.Menus.Events.pdb
