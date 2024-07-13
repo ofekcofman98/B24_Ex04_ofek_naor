@@ -13,6 +13,7 @@ namespace Ex04.Menus.Test
         public static Events.MainMenu CreateMainMenu()
         {
             Events.MainMenu mainMenu = new Events.MainMenu("Event Main Menu");
+
             Events.MenuItem versionAndCapitalsMenuItem = mainMenu.AddSubMenuItem("Version and Capitals");
             Events.MenuItem dateAndTimeMenuItem = mainMenu.AddSubMenuItem("Show Date/Time");
 
@@ -24,7 +25,6 @@ namespace Ex04.Menus.Test
 
             Events.MenuItem showDate = dateAndTimeMenuItem.AddSubMenuItem("Show date");
             showDate.Chosen += ItemsMethods.ShowDate;
-            
             Events.MenuItem showTime = dateAndTimeMenuItem.AddSubMenuItem("Show time");
             showTime.Chosen += ItemsMethods.ShowTime;
 
